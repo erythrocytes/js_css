@@ -1,0 +1,25 @@
+div {
+    background: #ffdddd;
+}
+
+.square {
+    background-color: #ddffff;
+    border-radius: 7.11px;
+    border: 0.5px dotted rgba(0,0,0,0.5);
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+}
+
+.hide {
+    opacity: 0;
+}
+
+#button {
+    width: 100px;
+    height: 50px;
+    border-radius: 12.5px;
+    background-color: #ffffdd;
+    color: gray;
+    float: right;
+}

@@ -1,95 +1,11 @@
 <html>
 <head>
-	<style type="text/css">
-        form, input {
-            text-align: center;
-        }
-        
-        #logo {
-            height: 86px;
-            width: 287px;
-            display: block;
-            margin: 8px auto;
-        }
-
-
-
-        #frame1 {
-            position: absolute;
-            border: 1px dashed #555;
-            left:50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-        }
-        
-        input {
-            height: 1.333333em;
-            font: 4em Futura, arial, sans-serif;
-            margin: 5px;
-        }
-
-        #nav {
-            background-color: #444;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            text-align: right;
-            padding: 3px 5px;
-            color: white;
-        }
-
-        #nav ul, #nav li {
-            display: inline;
-            font-family: sans-serif;
-        }
-
-        #nav li {
-            margin: 0 7px;
-        }
-
-        #nav li:hover {
-            text-decoration: underline;
-        }
-
-        #side {
-            background-color: blue;
-            position: absolute;
-            left: 0;
-            right: 75%;
-            bottom: 0;
-            top: 0;
-        }
-
-        #footer {
-            background-color: #ccc;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: center;
-            padding: 3px 5px;
-            color: #111;
-        }
-	</style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <div id="nav">
-        <ul>
-            <li>Profile</li>
-            <li>Plus</li>
-            <li>Exit</li>
-        </ul>
-    </div>
-    <div id="frame1">
-        <img id="logo" src="glogo2.png">
-        <form action="#" method="post">
-            <input type="text">
-            <input type="submit" value="WEW">
-            <input type="submit" value="LAD">
-        </form>
-    </div>
-    <div id="footer">©2015 shitty carwash company</div>
+    <div id="button">CLEAR</div>
+    <div id="frame"></div>
 </body>
 </html>
