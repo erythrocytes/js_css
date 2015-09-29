@@ -1,26 +1,34 @@
 $(document).ready(function() {
-	no = 16;
+	n = 16;
 	fr = $('#frame');
-	magic = function() {
-		for (var i =1; i <= no; i++) {
-			for (var j = 1; j <= no; j++) {
+	//Here goes the function for drawing the screen
+	draw = function() { 
+		for (var i =1; i <= n; i++) {
+			for (var j = 1; j <= n; j++) {
 				fr.append('<div class="square"></div>');
 			};
 			fr.append('<br>');
 		};
+		var w = (640 / n) - 1;
+		var sq = $('.square');
+		var wpx = w + "px";
+		sq.css('width', wpx);
+		sq.css('height', wpx);
 	};
-	magic();
+	draw();
+	magic = function () {
+		fr.empty();
+		n = prompt("set new width in squares");
+		draw();
+		//test—works!
+		s = $('.square');
+		s.mouseenter(function(){
+			$(this).addClass('hide');
+		});		
+	}
 	s = $('.square');
-	s.hover(function(){
+	s.mouseenter(function(){
 		$(this).addClass('hide');
 	});
-	b = $('#button');
-	b.click(function(){
-		s.removeClass('hide');
-		fr.empty();
-		no = prompt("set new width in squares");
-		var w = (640 / 32)-1;
-		
-		magic();
-	});
+
 });
